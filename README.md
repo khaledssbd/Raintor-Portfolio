@@ -1,36 +1,123 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Raintor - Portfolio Website
 
-## Getting Started
+Raintor is a modern portfolio website built with Next.js, featuring a sleek
+design and smooth user experience. This project showcases my work, skills, and
+professional journey.
 
-First, run the development server:
+## Features
+
+- Responsive design for all devices
+- Dark/light mode toggle
+- Smooth animations and transitions
+- Project showcase section
+- Contact form functionality
+- SEO optimized
+
+## Framework and Tools Used
+
+- **Next.js** (15.3.4) - React framework for server-side rendering and static
+  site generation
+- **React** (19.0.0) - JavaScript library for building user interfaces
+- **Tailwind CSS** - Utility-first CSS framework
+- **Radix UI** - Unstyled, accessible UI components
+- **Lucide React** (0.525.0) - Beautiful, consistent icons
+- **Next Themes** (0.4.6) - For theme switching support
+- **Class Variance Authority** (0.7.1) - For managing class variants
+- **clsx** (2.1.1) - For constructing className strings conditionally
+- **tailwind-merge** (3.3.1) - For merging Tailwind classes
+
+## Setup Instructions
+
+### Prerequisites
+
+- Node.js (v18 or later recommended)
+- npm or yarn
+- Git (optional)
+
+### Installation
+
+1. Clone the repository (or download the source code):
+
+```bash
+git clone https://github.com/khaledssbd/Raintor-Portfolio.git
+cd Raintor-Portfolio
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see
+   the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To create an optimized production build:
 
-## Learn More
+```bash
+npm run build
+# or
+yarn build
+```
 
-To learn more about Next.js, take a look at the following resources:
+Then start the production server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm start
+# or
+yarn start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Project Structure
 
-## Deploy on Vercel
+```
+raintor-portfolio/
+├── public/          # Static files
+├── src/
+│   ├── app/         # Next.js 13+ app directory
+│   ├── components/  # Reusable components
+│   ├── lib/         # Utility functions
+│   ├── styles/      # Global styles
+│   └── content/     # Portfolio content (projects, etc.)
+├── next.config.js   # Next.js configuration
+└── tailwind.config.js # Tailwind CSS configuration
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<!-- ## Limitations and Tradeoffs
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Browser Support**: The portfolio uses modern CSS features that may not be fully supported in older browsers (IE is not supported).
+
+2. **Performance**: While optimized, the site includes animations and transitions that may affect performance on low-end devices.
+
+3. **Content Management**: Currently, portfolio content is managed through local files rather than a CMS, requiring code changes for updates.
+
+4. **Form Handling**: The contact form requires backend setup (like API routes) for full functionality.
+
+5. **Theme System**: While Next Themes provides theme switching, there might be a brief flash of the default theme before the correct one loads (common issue with SSR). -->
+
+## Contributing
+
+While this is primarily a personal portfolio, contributions and suggestions are
+welcome. Please open an issue first to discuss any changes.
+
+## License
+
+This project is open-source under the [MIT License](LICENSE).
+
+<!-- Add a license file if applicable -->
+
+---
+
+Thank you for checking out Raintor! For any questions, feel free to reach out.
